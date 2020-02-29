@@ -21,7 +21,7 @@ out_lunch = '13:00'
 in_lunch = '14:00'
 out_work = '18:00'
 description = 'Manutencao regular'
-geckodriver_driver_path=r'C:\Users\rodri\Documents\MEGAsync\repositories\hours_forms\geockdriver\geckodriver.exe'
+geckodriver_driver_path=r'C:\geockdriver\geckodriver.exe'
 url = 'http://apps.wafx.com.br/chronus/Pages/Cadastro/Apontamento.aspx'
 
 
@@ -91,19 +91,6 @@ def fill_date_field(vdate):
 
 
 chronus_login(vusername, vpassword)
-
-dateday = dateday_beg
-
-# while dateday_beg <= dateday_end:
-#     try:
-#         dateday = str(dateday_beg).zfill(2)
-#         fulldate = dateday + '/' + datemonth + '/' +  dateyear
-#         dateday_str = datetime.datetime.strftime(dateday_beg, '%d/%m/%Y')
-#         fill_date_field(dateday_str)
-#         fill_body_fields()
-#     finally:
-#         dateday_beg += 1
-#         print(fulldate) - ok
 
 
 dateday_beg = conv_str_to_date(dateday_beg)
